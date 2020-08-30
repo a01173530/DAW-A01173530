@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang >
 <head>
 	<meta charset="utf-8">
 	<title>Lab 5</title>
@@ -8,13 +8,27 @@
 <body>
 	<h1>Lab 5</h1>
 	<form onsubmit="return fun1()">
-		Password <input type="password" id="password" value="">
+		Password: <input type="password" id="password" value="">
 		<span id="message"></span><br><br>
-		Verificar Password <input type="password" id="passwords" value="">
+		Verificar Password: <input type="password" id="passwords" value="">
 		<span id="message"></span><br><br>
 		<input type="submit" value="Enviar">
 
 	</form>
+	<br>
+	<div class="container">
+		<div class="row">
+            <main id="items" class="col-sm-8 row"></main>
+            <aside class="col-sm-4">
+               <h2>Carrito</h2>
+               <ul id="carrito" class="list-group"></ul>
+               <hr>
+      
+               <p class="text-right">Total: <span id="total"></span>&dollar;</p>
+               <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            </aside>
+         </div>
+     </div>
 
 <script src="JS/script.js"></script>
 </body>
