@@ -1,0 +1,34 @@
+
+
+.watermark {
+    opacity: 0.5;
+    position: fixed;
+    top: auto;
+    left: 80%;
+}
+
+.cambioEstilo:hover {
+	color:blue;
+	font-family: "Lucida Console", Courier, monospace;
+
+}
+
+p{
+	font-family: "Times New Roman", Times, serif;
+
+}
+
+h1{
+	text-align: center;
+}
+
+a input{
+	background: lightgreen;
+}
+
+#div1 {
+  width: 310px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}

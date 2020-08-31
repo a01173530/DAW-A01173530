@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lab 6</title>
+	<link rel="stylesheet"  href="CSS/styles.css">
+
+
+</head>
+<body>
+	<h1>Lab 6</h1>
+
+	 <div class="watermark">
+	 	<img src="image/texto.jpg">
+
+    </div>
+    <br>
+    <p class="cambioEstilo">¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</p>
+
+    <p>Static: Es el valor por defecto por lo que las propiedades top, right, bottom, left y z-index no tienen efecto.</p>
+    <br>
+    <p>Relative:  flujo normal del documento, y luego es desplazado con relación a sí mismo, con base en los valores de top, right, bottom, and left.</p>
+
+    <p>Absolute: El elemento es removido del flujo normal del documento. Está posicionado relativo a su ancestro posicionado más cercano, su posición final está determinada por los valores de top, right, bottom, y left.</p>
+    <br>
+
+    <p>Fixed: El elemento es removido del flujo normal del documento. Está posicionado con relación al bloque contenedor inicial establecido por el viewport, su posición final es determinada por los valores de top, right, bottom, y left.</p>
+
+    <br>
+
+    <p>Sticky: Es posicionado de acuerdo al flujo normal del documento, y luego desplazado con relación a su ancestro que se desplace más cercano y su bloque contenedor. El desplazamiento no afecta la posición de ningún otro elemento.</p>
+    <br>
+    <a href="https://developer.mozilla.org/es/docs/Web/CSS/position">Referencia: https://developer.mozilla.org/es/docs/Web/CSS/position</a>
+    <br>
+    <br>
+    <br>
+    <a href="https://developer.mozilla.org/es/docs/Web/CSS/position"><input type="button" value="Ayuda"></a>
+    <br>
+    <br>
+    <br>
+    <p>¿Cuáles son los valores estándar para la propiedad visibility?</p>
+    <br>
+    <br>
+    <p>visible: El que se muestra normalmente.</p>
+    <p>hidden: Es como si el elemento fuera absolutamente transparente. El elemento está oculto y los otros elementos se acomodan como si estuviera.</p>
+    <p>collapse: Son para tablas, filas, columnas y grupos de tablas. Las filas o columnas se esconden y el espacio que normalmente ocupan, es ocupado.</p>
+    <a href="https://developer.mozilla.org/es/docs/Web/CSS/visibility">Referencia: https://developer.mozilla.org/es/docs/Web/CSS/visibility</a>
+    <br>
+    <br>
+    <button onclick="startime()"> Mensaje secreto</button>
+    <br>
+    <br>
+    <p>¿Qué es el zIndex y para qué sirve?</p>
+    <p>Indica el orden de un elemento posicionado y sus descendientes.También especifica: El nivel de apilamiento en el actual contexto de apilado y si la caja establece un contexto de apilamiento local.</p>
+    <a href=" https://developer.mozilla.org/es/docs/Web/CSS/z-index"> Referencia: https://developer.mozilla.org/es/docs/Web/CSS/z-index</a>
+    <br>
+    <br>
+    <p>Bienvenidos a septiembre</p>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+   
+    <img id="drag1" src="image/mexico.png" draggable="true" ondragstart="drag(event)" width="297" height="170">
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

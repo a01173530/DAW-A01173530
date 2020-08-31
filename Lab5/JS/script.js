@@ -76,7 +76,7 @@ function renderItems() {
         miNodoImagen.setAttribute("src", info["imagen"]);
         // Precio
         let miNodoPrecio = document.createElement("p");
-        miNodoPrecio.classList.add('card-text');
+        miNodoPrecio.classList.add("card-text");
         miNodoPrecio.textContent = info["precio"] + "$";
         // Boton 
         let miNodoBoton = document.createElement("button");
@@ -151,6 +151,15 @@ function vaciarCarrito() {
 }
 
 $botonVaciar.addEventListener("click", vaciarCarrito);
-
+document.getElementById("boton").addEventListener("click",multiplicacion);
 renderItems();
+
+
+function multiplicacion(){
+	var num1= document.getElementById("num1").value;
+	var num2= document.getElementById("num2").value;
+	var multi= parseInt(num1) * parseInt(num2);
+	alert("La multiplicacion es: " +multi);
+
+}
 
