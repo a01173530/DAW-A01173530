@@ -1,0 +1,17 @@
+¿Que muestra la instrucción?
+
+muestra una descripción de como esta construida la tabla creada
+
+¿Qué efecto tuvo esta acción?
+creo todas las tablas en un solo script
+
+¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+
+que podemos almacenar todos nuestros scripts en un archivo y ejecutarlos en una parte especifica
+
+¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+Que manejan los mismos tipos de datos y son tablas
+
+
+¿Qué sucedió?
+La tabla de Materiales añadio los datos del archivo
