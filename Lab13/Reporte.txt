@@ -1,0 +1,68 @@
+Revisa el contenido de la tabla materiales y determina si existe alguna inconsistencia en el contenido de la tabla. ¿Cuál es? ¿A qué se debe?
+la clave ya existe y eso puede generar error
+
+
+¿Qué ocurrió?
+
+se es violando una regla de restriccion ya que ya hay una clave definida con el numero insertado
+
+¿Qué información muestra esta consulta?
+
+Muestra los valores constantes en la tabla es decir las llaves primarias
+
+¿Qué sentencias utilizaste para definir las llaves primarias?
+
+ALTER TABLE add constraint  PRIMARY KEY ( )
+
+¿Qué sentencias utilizaste para definir este constrait?
+
+ALTER TABLE Entregan ADD CONSTRAINT llaveEntregan PRIMARY KEY (Clave,RFC,Numero,Fecha)
+
+¿Qué particularidad observas en los valores para clave, rfc y numero?
+que estan ordenados de menor a mayor 
+
+¿Cómo responde el sistema a la inserción de este registro?
+
+De manera exitosa ya que los datos son validos y no se repiten pero es inconsistente con los otros datos
+
+¿Qué significa el mensaje que emite el sistema?
+que no permite incosistencia ya que en otra tabla se evalua la informacion 
+
+¿Qué significado tiene la sentencia anterior?
+Que ya es una llave foranea y que debe de estar el dato tanto en la tabla de entregan como en la de materiales
+
+
+
+¿Qué significan las columnas de esas consultas?
+Es el estado o informacion acerca de las llaves cuales son primarias y las foraneas a que hacen referencia
+
+
+¿Qué uso se le está dando a GETDATE()?
+optiene la fecha actual al momento de ser ejecutado.
+
+¿Tiene sentido el valor del campo de cantidad?
+Si ya que lo unico que le da diferencia es la fecha y los otros datos si pueden repetirse
+
+
+¿Cómo responde el sistema?
+Muestra mensaje de error
+
+¿Qué significa el mensaje?
+que hay un check que prohibe la entrada a cantidades menores o iguales a cero
+
+Integridad referencial
+Son las reglas que utilizan las bases de datos relacionales para asegurar que los registros de las tablas relacionadas son válidos y no se borren o cambien datos relacionados produciendo errores de integridad.
+
+aulaclic. (2019). Conceptos básicos de integridad referencial. 28/09/20, de aulaclic Sitio web: https://www.aulaclic.es/sql/b_8_1_1.htm
+
+
+
+
+
+
+
+
+
+
+
+
