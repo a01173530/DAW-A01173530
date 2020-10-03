@@ -1,3 +1,11 @@
+<?php 
+include("Backend/conexion.php");
+$query="select*from imagenes";
+$resultado= mysqli_query($conn,$query);
+
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,17 +14,46 @@
 </head>
 <body>
 
-	<div class="conteiner">
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-4">
-				<h1 class="text-primary">Galería de imagenes</h1>
-				<form action="Backend/subir.php" method="post"></form>
+				<h1 class="text-primary">Subir de imagen</h1>
+				<form action="Backend/subir.php" method="post" enctype="multipart/form-data">
+					<div class="form-group">
+						<label for="my-input">Selecciona una imagen</label>
+						<input id="my-input"  type="file" name="imagen">
+					</div>
+					<div class="form-group">
+						<label for="my-input">Nombre de la imagen</label>
+						<input id="my-input" class="form-control" type="text" name="titulo">
+					</div>
+					<?php if(isset($_SESSION["mensaje"])){ ?>
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+						<strong><?php echo $_SESSION["mensaje"]; ?></strong> 
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<?php  session_unset();} ?>
+					<input type="submit" value="Guardar" name="Guardar">
+				</form>
+			</div>
+			<div class="col-lg-8">
+				<h1 class="text-primary text-center">Galeria de imagenes</h1>
+				<br>
+				<div class="card-columns">
+					<?php foreach ($resultado as $row){ ?>
+					<div class="card">
+						<img class="card-img-top" src="Backend/imagenes/<?php echo $row["imagen"];?>" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title that wraps to a new line</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					<?php } ?>
+					</div>
 			</div>
 			
-
-
 		</div>
-		
 
 	</div>
 
