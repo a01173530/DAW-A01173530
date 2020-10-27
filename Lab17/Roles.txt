@@ -1,0 +1,3 @@
+user1 12 admin
+user2 123 maestro 
+user3 1234 estudiante

@@ -40,8 +40,29 @@ function getFruitsByName($fruit_name){
 
 	$sql ="SELECT name, units, quantity, price, country FROM Fruit WHERE price <= '".$cheap_price."'";
 
+	$result= mysqli_query($conn, $sql);
+
+	closeDb($conn);
+
+
+	return $result;
+
 
 }
+
+
+getCheapestFruits($cheap_price){
+	$conn =conectDb();
+	$sql="SELECT name,units,quantify, price,country FROM Fruit WHERE price <= '". $cheap_price."'";
+
+	$result= mysqli_query($conn, $sql);
+
+	closeDb($conn);
+	return $result;
+
+}
+
+
 
 
 
