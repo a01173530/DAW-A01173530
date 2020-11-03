@@ -1,0 +1,34 @@
+
+¿Qué hace el primer bloque del código (bloque del IF)?
+
+Revisa que exista el Stored Procedures y si existe la elimina borra, para actualizar la base de datos.
+
+
+¿Para qué sirve la instrucción GO?
+
+Detiene la ejecución del Procedure hasta que se haya ejecutado lo ultimo es decir la condición del if.
+
+¿Explica que recibe como parámetro este Procedimiento y qué tabla modifica?
+Recibe cuatro parametros, tres numericos ( clave, impuesto y costo ) y uno VARCHAR (descripcion)
+
+
+EXECUTE queryMaterial 'Lad',20
+
+Explica en tu reporte qué recibe como parámetro este procedimiento y qué hace.
+
+busca en la tabla de materiales las descripciones que tengan el patron Lab y donde el costo es mayor a el valor dado en este caso 20
+
+
+
+¿Qué ventajas tienen el utilizar Stored Procedures en una aplicación cliente-servidor?
+Proporciona rapidez en las consultas, independencias porque no dependende de algun lenguaje y seguridad  ya que solo se trabaja con lo que existe en la base de datos
+
+Referencia:
+https://firebird21.wordpress.com/2015/10/09/por-que-usar-stored-procedures/
+
+¿Qué ventajas tiene utilizar SP en un proyecto?
+
+Ayuda al trabajo de equipo ya que como se menciono es independiente del lenguaje de programacion asi que cualquiera puede trabajr en el ambiente que mas le sienta comodo
+
+Referencia:
+https://firebird21.wordpress.com/2015/10/09/por-que-usar-stored-procedures/
