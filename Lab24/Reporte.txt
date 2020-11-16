@@ -1,0 +1,29 @@
+
+Equipo con Fernando Vargas y Miguel Angel Marines Olvega
+El script esta en el repositotio de Fernando Vargas A01066270
+
+¿Que pasa cuando deseas realizar esta consulta?
+Muestra la tabla con los datos insertados, en la otra sesion.
+
+
+¿Qué pasa cuando deseas realizar esta consulta?
+Ya es posible que el usuario vea los datos en la transaccion.
+Con el commit transaction, hace que sea disponible para todos los usuarios y no solo 
+para el primer usuario que la ejecute.
+
+
+¿Qué ocurrió y por qué? 
+El estado de la base de datos volvio a su forma inicial porque se cancelo la transaccion anterior
+
+¿Para qué sirve el comando @@ERROR revisa la ayuda en línea? Devuelve un numero dependiendo del error
+
+¿Qué hace la transacción? trata de insertar nuevos datos a la tabla cliente.
+
+¿Hubo alguna modificación en la tabla? Explica qué pasó y por qué.
+Se obtuvo un rollback transaction y no permitio hacer un cambio por que hubo un problema con la transaccion.
+
+
+
+
+
+
